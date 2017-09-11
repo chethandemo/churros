@@ -1,9 +1,0 @@
-{
-  "description": "Some details on the issue ...",
-  "subject": "Support needed..",
-  "email": "test@tester.com",
-  "priority": 1,
-  "status": 2,
-  "source": 2,
-  "ticket_type": "Incident"
-}

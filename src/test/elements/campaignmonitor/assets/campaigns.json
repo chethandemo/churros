@@ -1,9 +1,0 @@
-{
-  "Name": "<<random.word>>",
-  "Subject": "<<random.word>>",
-  "FromName": "<<random.word>>",
-  "FromEmail": "<<internet.email>>",
-  "ReplyTo": "myemail@mydomain.com",
-  "HtmlUrl": "http://www.example.com",
-  "ListIDs": []
-}

@@ -1,7 +1,0 @@
-{
-  "name": "<<random.word>> <<random.word>>",
-  "type": "New Customer",
-  "source": "Web",
-  "stage": "Prospecting",
-  "description": "<<random.words>>"
-}

@@ -1,9 +1,0 @@
-{
-  "contacts": {
-    "vendorName": "contacts",
-    "fields": [{
-      "path": "id",
-      "vendorPath": "id"
-    }]
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "type": "array",
-  "items": {
-    "$ref": "step-execution.schema.json"
-  }
-}

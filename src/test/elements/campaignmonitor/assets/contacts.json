@@ -1,6 +1,0 @@
-{
-  "EmailAddress": "<<internet.email>>",
-  "Name": "<<name.firstName>>",
-  "Resubscribe": true,
-  "RestartSubscriptionBasedAutoresponders": true
-}

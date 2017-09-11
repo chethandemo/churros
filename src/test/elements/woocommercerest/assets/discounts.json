@@ -1,8 +1,0 @@
-{
-  "code": "<<random.word>>",
-  "discount_type": "percent",
-  "amount": "100",
-  "individual_use": true,
-  "exclude_sale_items": true,
-  "minimum_amount": "100.00"
-}

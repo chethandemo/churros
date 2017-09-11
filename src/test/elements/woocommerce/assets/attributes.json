@@ -1,9 +1,0 @@
-{
-  "product_attribute": {
-    "name": "Color123",
-    "slug": "pa_color123",
-    "type": "select",
-    "order_by": "menu_order",
-    "has_archives": true
-  }
-}

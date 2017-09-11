@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>provisioner.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-core_cleaner.html">core/cleaner</a></li><li><a href="module-core_defaults.html">core/defaults</a><ul class='methods'><li data-type='method'><a href="module-core_defaults.html#.reset">reset</a></li><li data-type='method'><a href="module-core_defaults.html#.token">token</a></li></ul></li><li><a href="module-core_logger.html">core/logger</a></li><li><a href="module-core_oauth.html">core/oauth</a></li><li><a href="module-core_props.html">core/props</a><ul class='methods'><li data-type='method'><a href="module-core_props.html#.all">all</a></li><li data-type='method'><a href="module-core_props.html#.get">get</a></li><li data-type='method'><a href="module-core_props.html#.getForKey">getForKey</a></li><li data-type='method'><a href="module-core_props.html#.getOptional">getOptional</a></li><li data-type='method'><a href="module-core_props.html#.getOptionalForKey">getOptionalForKey</a></li><li data-type='method'><a href="module-core_props.html#.set">set</a></li><li data-type='method'><a href="module-core_props.html#.setForKey">setForKey</a></li></ul></li><li><a href="module-core_provisioner.html">core/provisioner</a><ul class='methods'><li data-type='method'><a href="module-core_provisioner.html#.create">create</a></li><li data-type='method'><a href="module-core_provisioner.html#.delete">delete</a></li><li data-type='method'><a href="module-core_provisioner.html#.partialOauth">partialOauth</a></li><li data-type='method'><a href="module-core_provisioner.html#~orchestrateCreate">orchestrateCreate</a></li></ul></li><li><a href="module-core_server.html">core/server</a><ul class='methods'><li data-type='method'><a href="module-core_server.html#.listen">listen</a></li><li data-type='method'><a href="module-core_server.html#.start">start</a></li><li data-type='method'><a href="module-core_server.html#.stop">stop</a></li></ul></li><li><a href="module-core_suite.html">core/suite</a><ul class='methods'><li data-type='method'><a href="module-core_suite.html#.forElement">forElement</a></li><li data-type='method'><a href="module-core_suite.html#.forPlatform">forPlatform</a></li></ul></li><li><a href="module-core_tools.html">core/tools</a><ul class='methods'><li data-type='method'><a href="module-core_tools.html#.base64Decode">base64Decode</a></li><li data-type='method'><a href="module-core_tools.html#.base64Encode">base64Encode</a></li><li data-type='method'><a href="module-core_tools.html#.copyAsset">copyAsset</a></li><li data-type='method'><a href="module-core_tools.html#.fake">fake</a></li><li data-type='method'><a href="module-core_tools.html#.getBaseElement">getBaseElement</a></li><li data-type='method'><a href="module-core_tools.html#.logAndThrow">logAndThrow</a></li><li data-type='method'><a href="module-core_tools.html#.random">random</a></li><li data-type='method'><a href="module-core_tools.html#.randomEmail">randomEmail</a></li><li data-type='method'><a href="module-core_tools.html#.randomInt">randomInt</a></li><li data-type='method'><a href="module-core_tools.html#.randomStr">randomStr</a></li><li data-type='method'><a href="module-core_tools.html#.requirePayload">requirePayload</a></li><li data-type='method'><a href="module-core_tools.html#.runFile">runFile</a></li><li data-type='method'><a href="module-core_tools.html#.sleep">sleep</a></li><li data-type='method'><a href="module-core_tools.html#.stringify">stringify</a></li><li data-type='method'><a href="module-core_tools.html#.updateMetadata">updateMetadata</a></li><li data-type='method'><a href="module-core_tools.html#~times">times</a></li></ul></li><li><a href="module-core_tunnel.html">core/tunnel</a><ul class='methods'><li data-type='method'><a href="module-core_tunnel.html#.start">start</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="module-core_cleaner-elements.html">elements</a><ul class='methods'><li data-type='method'><a href="module-core_cleaner-elements.html#.withName">withName</a></li></ul></li><li><a href="module-core_cleaner-formulas.html">formulas</a><ul class='methods'><li data-type='method'><a href="module-core_cleaner-formulas.html#.withName">withName</a></li></ul></li><li><a href="module-core_cleaner-integrations.html">integrations</a><ul class='methods'><li data-type='method'><a href="module-core_cleaner-integrations.html#.withName">withName</a></li></ul></li><li><a href="module-core_suite.test.html">test</a></li><li><a href="module-core_suite.test.should.html">should</a><ul class='methods'><li data-type='method'><a href="module-core_suite.test.should.html#.return200OnGet">return200OnGet</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.return200OnPost">return200OnPost</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.return400OnPost">return400OnPost</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.return404OnDelete">return404OnDelete</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.return404OnGet">return404OnGet</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.return404OnPatch">return404OnPatch</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.return404OnPut">return404OnPut</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.return409OnPost">return409OnPost</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportBulkDownload">supportBulkDownload</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportBulkUpload">supportBulkUpload</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCd">supportCd</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCeqlSearch">supportCeqlSearch</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCeqlSearchForMultipleRecords">supportCeqlSearchForMultipleRecords</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCr">supportCr</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCrd">supportCrd</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCrds">supportCrds</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCrs">supportCrs</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCrud">supportCrud</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCruds">supportCruds</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCrus">supportCrus</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportCs">supportCs</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportNextPagePagination">supportNextPagePagination</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportPagination">supportPagination</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportPolling">supportPolling</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportS">supportS</a></li><li data-type='method'><a href="module-core_suite.test.should.html#.supportSr">supportSr</a></li></ul></li><li><a href="module-core_suite.test.withApi.html">withApi</a></li><li><a href="module-core_suite.test.withName.html">withName</a></li><li><a href="module-core_suite.test.withOptions.html">withOptions</a></li><li><a href="module-core_suite.test.withValidation.html">withValidation</a></li><li><a href="module-core_tools.wait.html">wait</a><ul class='members'><li data-type='member'><a href="module-core_tools.wait.html#.for">for</a></li></ul></li><li><a href="module-core_tools.wait.upTo.html">upTo</a><ul class='members'><li data-type='member'><a href="module-core_tools.wait.upTo.html#.for">for</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#cd">cd</a></li><li><a href="global.html#crd">crd</a></li><li><a href="global.html#delete">delete</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#patch">patch</a></li><li><a href="global.html#patchFile">patchFile</a></li><li><a href="global.html#post">post</a></li><li><a href="global.html#postFile">postFile</a></li><li><a href="global.html#put">put</a></li><li><a href="global.html#putFile">putFile</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">provisioner.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** @module core/provisioner */
+'use strict';
+
+const chakram = require('chakram');
+const expect = chakram.expect;
+const tools = require('core/tools');
+const props = require('core/props');
+const urlParser = require('url');
+const logger = require('winston');
+const o = require('core/oauth');
+const r = require('request');
+const defaults = require('core/defaults');
+const cloud = require('core/cloud');
+const argv = require('optimist').argv;
+
+var exports = module.exports = {};
+
+const genInstance = (config) =>
+  ({
+    name: config.name,
+    element: { key: config.element },
+    configuration: config.ec
+  });
+
+const genConfig = (props, args) => {
+  const config = Object.assign({}, props, args);
+
+  const name = (args &amp;&amp; args.name) ? args.name : 'churros-instance';
+  const tags = (args &amp;&amp; args.tags) ? args.tags : undefined;
+  delete config.name;
+
+  return {
+    ec: config,
+    name: name,
+    tags: tags
+  };
+};
+
+const parseProps = (element) => {
+  const args = {
+    username: props.getForKey(element, 'username'),
+    password: props.getForKey(element, 'password'),
+    options: {
+      qs: {
+        apiKey: props.getForKey(element, 'oauth.api.key'),
+        apiSecret: props.getForKey(element, 'oauth.api.secret'),
+        callbackUrl: (props.getOptionalForKey(element, 'oauth.callback.url') || props.get('oauth.callback.url')),
+        scope: props.getOptionalForKey(element, 'oauth.scope'),
+        siteAddress: props.getOptionalForKey(element, 'site.address'),
+        subdomain: props.getOptionalForKey(element, 'subdomain')
+      }
+    }
+  };
+  return new Promise((res, rej) => res(args));
+};
+
+const getPollerConfig = (element, instance) => {
+  if (!argv.polling) return Promise.resolve(instance);
+  let elementObj;
+  return cloud.get('/elements/' + element)
+  .then(r => elementObj = r.body)
+  .then(r => props.setForKey(element, 'elementId', elementObj.id))
+  .then(r => cloud.get(`elements/${elementObj.id}/metadata`))
+  .then(r => {
+    const pollsSupported = r.body.events.supported &amp;&amp; r.body.events.methods.includes('polling');
+    if (!pollsSupported) logger.error('Polling is not supported for this element.');
+    return pollsSupported;
+  })
+  .then(r => r ? elementObj.configuration.reduce((acc, conf) => acc = conf.key === 'event.poller.configuration' ? conf.defaultValue : acc, 'NoConfig') : null)
+  .then(r => {
+    if (r === null) return instance;
+    let instanceCopy = JSON.parse(JSON.stringify(instance));
+    if (elementObj.configuration.map(conf => conf.key).includes('event.metadata')) {
+      instanceCopy.configuration['event.objects'] = Object.keys(JSON.parse(elementObj.configuration
+      .reduce((acc, conf) => acc = conf.key === 'event.metadata' ? conf.defaultValue : acc, {})).polling).filter(str => str !== '{objectName}').join(',');
+    } else {
+      if (r !== 'NoConfig') instanceCopy.configuration['event.poller.configuration'] = r.replace(/\\n/g, '').replace(/\n/g, '').replace(/\t/g, '').replace(/&lt;PUT USERNAME HERE>/g, props.getOptionalForKey(element, 'username'));
+      if (instanceCopy.configuration['event.poller.configuration']) instanceCopy.configuration["event.poller.urls"] = Object.keys(JSON.parse(instanceCopy.configuration['event.poller.configuration'])).join('|');
+      else instanceCopy.configuration['event.poller.urls'] = elementObj.configuration.reduce((acc, conf) => acc = conf.key === 'event.poller.urls' ? conf.defaultValue : acc ,null);
+    }
+    instanceCopy.configuration['event.vendor.type'] = 'polling';
+    instanceCopy.configuration['event.notification.callback.url'] = 'https://httpbin.org/get';
+    instanceCopy.configuration['event.notification.enabled'] = 'true';
+    instanceCopy.configuration['event.poller.refresh_interval'] = '1';
+    instanceCopy.configuration['event.notification.signature.key'] = '';
+    return instanceCopy;
+  })
+  .catch(() => instance);
+};
+
+const addParams = (instance) => {
+  let instanceCopy = JSON.parse(JSON.stringify(instance));
+  if (argv.params) instanceCopy.configuration = Object.assign({}, instanceCopy.configuration, JSON.parse(argv.params));
+  return instanceCopy;
+};
+
+const addParamsToOptions = (argOptions) => {
+  let optionsCopy = JSON.parse(JSON.stringify(argOptions));
+  if (argv.params) optionsCopy.qs = Object.assign({}, optionsCopy.qs, JSON.parse(argv.params));
+  return optionsCopy;
+};
+
+const addDebugToParams = (args, params) => {
+  if (args &amp;&amp; args.debug) params.debug = true;
+  return params;
+};
+
+const createInstance = (element, config, providerData, baseApi) => {
+  config.element = tools.getBaseElement(element);
+  const instance = genInstance(config);
+
+  baseApi = (baseApi) ? baseApi : '/instances';
+
+  if (providerData) instance.providerData = providerData;
+  return getPollerConfig(tools.getBaseElement(element), instance)
+    .then(r => cloud.post(baseApi, addParams(r)))
+    .then(r => {
+      expect(r).to.have.statusCode(200);
+      logger.debug('Created %s element instance with ID: %s', element, r.body.id);
+      defaults.token(r.body.token);
+      global.instanceId = r.body.id;
+      tools.addCleanUp({url: `${props.get('url')}/elements/api-v2${baseApi}/${r.body.id}`, method: 'delete', secrets: defaults.secrets()});
+      return r;
+    })
+    .catch(r => tools.logAndThrow('Failed to create an instance of %s', r, element));
+};
+
+const createExternalInstance = (element, config, providerData) => {
+  const tokenUrl = config.tokenUrl;
+  const apiKey = config['oauth.api.key'];
+  const apiSecret = config['oauth.api.secret'];
+  const callbackUrl = props.get('oauth.callback.url');
+  const code = providerData.code;
+  let instanceBody;
+
+  if (!tokenUrl) {
+    throw Error("Token URL must be present in the element props as 'tokenUrl'");
+  }
+  let instanceElement = tools.getBaseElement(element);
+
+  return new Promise((res, rej) => {
+    r.post({
+      url: tokenUrl,
+      form: {
+        client_id: apiKey,
+        client_secret: apiSecret,
+        grant_type: 'authorization_code',
+        redirect_uri: callbackUrl,
+        code: code
+      }
+    }, (e, r, b) => {
+      let body = JSON.parse(b);
+      let refreshToken = body.refresh_token;
+      instanceBody = {
+        "element": {
+          "key": instanceElement
+        },
+        "configuration": {
+          "oauth.user.refresh_token": refreshToken,
+          "oauth.api.key": apiKey,
+          "oauth.api.secret": apiSecret,
+          "oauth.resource.url": props.getOptionalForKey(element, 'site.address'),
+          "site.url": props.getOptionalForKey(element, 'site.address'),
+          "site.address": props.getOptionalForKey(element, 'site.address')
+        },
+        "name": `${element} external auth churros`,
+        "externalAuthentication": "initial"
+      };
+      res(cloud.post('/instances', instanceBody));
+    });
+  });
+};
+
+const oauth = (element, args, config) => {
+  let urlElement = tools.getBaseElement(element);
+  const url = `/elements/${urlElement}/oauth/url`;
+  logger.debug('GET %s with options %s', url, JSON.stringify(addParamsToOptions(args.options)));
+  return cloud.withOptions(addParamsToOptions(args.options)).get(url)
+    .then(r => {
+      expect(r).to.have.statusCode(200);
+      return o(element, r, args.username, args.password, config);
+    })
+    .catch(err => {
+      logger.error("OAuth exchange failed: %s", err);
+      throw err;
+    })
+    .then(r => {
+      const query = urlParser.parse(r, true).query;
+      expect(query).to.not.be.null;
+      const providerData = {
+        code: query.code,
+        apikey: query.apikey,
+        access_token: query.access_token,
+        refresh_token: query.refresh_token,
+        expires_in: query.expires_in,
+        state: query.state,
+        oauth_token: query.oauth_token,
+        oauth_verifier: query.oauth_verifier,
+        secret: args.secret,
+        realmId: query.realmId,
+        dataSource: query.dataSource
+      };
+      if(args &amp;&amp; args.debug) {
+        providerData.debug = true;
+      }
+      return providerData;
+    });
+};
+
+const oauth1 = (element, args) => {
+  const oauthTokenUrl = `/elements/${element}/oauth/token`;
+  return cloud.withOptions(args.options).get(oauthTokenUrl)
+    .then(r => {
+      expect(r).to.have.statusCode(200);
+      args.options.qs.requestToken = r.body.token;
+      args.secret = r.body.secret;
+      return args;
+    });
+};
+
+/**
+ * Handles orchestrating this create, which can flow different ways depending on what type of
+ * provisioning this element support
+ * @param  {string} element  The element key
+ * @param  {object} args     The args to pass on the create instance call
+ * @param  {string} baseApi  The base API
+ * @return {Promise}         JS promise that resolves to the instance created
+ */
+const orchestrateCreate = (element, args, baseApi, cb) => {
+  const type = props.getOptionalForKey(element, 'provisioning');
+  const config = genConfig(props.all(element), args);
+  config.element = element;
+
+  logger.debug('Attempting to provision %s using the %s provisioning flow', element, type ? type : 'standard');
+
+  switch (type) {
+    case 'oauth1':
+    case 'oauth2':
+      config.ec['oauth.callback.url'] = props.getOptionalForKey(element, 'oauth.callback.url') === null ?
+        props.get('oauth.callback.url') :
+        props.getForKey(element, 'oauth.callback.url');
+      logger.debug('Using callback URL: ' + config.ec['oauth.callback.url']);
+      return parseProps(element)
+        .then(r => (type === 'oauth1') ? oauth1(element, r) : r)
+        .then(r => addDebugToParams(args, r))
+        .then(r => oauth(element, r, config.ec))
+        .then(r => cb(type, config, r));
+    case 'custom':
+      const cp = `${__dirname}/../test/elements/${element}/provisioner`;
+      return require(cp).create(config);
+    default:
+      return createInstance(element, config, undefined, baseApi);
+  }
+};
+
+/**
+ * Provision an element using just the partial OAuth flow.
+ * @param {string} element The element key
+ * @param {Object} args Any other args to pass when provisioning the element
+ * @param {string} baseApi The base API
+ * @return {Promise}  A promise that will resolve to the response after the partial OAuth flow is complete
+ */
+exports.partialOauth = (element, args, baseApi) => orchestrateCreate(element, args, baseApi, (type, config, r) => r.code);
+
+/**
+ * Provision an element instance
+ * @param {string} element The element key
+ * @param {Object} args All properties that are available in churros props for this element
+ * @param {string} baseApi The base API
+ * @return {Promise}  A promise that resolves to the HTTP response after attempting to create the element instance
+ */
+exports.create = (element, args, baseApi) => {
+  const cb = (type, config, r) => {
+    const external = props.getOptionalForKey(element, 'external');
+
+    if (external &amp;&amp; type === 'oauth2') return createExternalInstance(element, config.ec, r);
+    if (external &amp;&amp; type === 'oauth1') throw Error('External Authentication via churros is not yet implemented for OAuth1');
+
+    return createInstance(element, config, r, baseApi);
+  };
+
+  return orchestrateCreate(element, args, baseApi, cb);
+};
+
+/**
+ * Delete an element instance
+ * @param {number} id The element instance ID
+ * @param {string} baseApi The base API
+ * @return {Promise}  A promise that resolves to the HTTP response after attempting to delete this element instance
+ */
+exports.delete = (id, baseApi) => {
+  if (!id) return;
+
+  baseApi = (baseApi) ? baseApi : '/instances';
+  // when running the delete API, don't include the element token in the auth header
+  const { userSecret, orgSecret } = defaults.secrets();
+  const headers = { Authorization: `User ${userSecret}, Organization ${orgSecret}` };
+  return cloud.withOptions({ headers }).delete(`${baseApi}/${id}`)
+    .then(r => {
+      logger.debug(`Deleted element instance with ID: ${id}`);
+      defaults.reset();
+      return r.body;
+    })
+    .catch(r => tools.logAndThrow('Failed to delete element instance with ID: %s', r, id));
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon Sep 11 2017 23:02:33 GMT+0000 (UTC) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

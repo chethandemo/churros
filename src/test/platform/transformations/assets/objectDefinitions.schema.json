@@ -1,8 +1,0 @@
-{
-  "type": "object",
-  "patternProperties": {
-    "^.+$": {
-      "$ref": "objectDefinition.schema.json"
-    }
-  }
-}

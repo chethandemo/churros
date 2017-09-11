@@ -1,6 +1,0 @@
-{
-    "type":"template",
-    "subject":"<<name.title>>",
-    "textbody":"<<lorem.sentence>>",
-    "messagebody":"<<lorem.paragraph>>"
-}

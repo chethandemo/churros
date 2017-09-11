@@ -1,7 +1,0 @@
-{
-  "description": "RobotTestDescription",
-  "type": "Electrical",
-  "priority": "Low",
-  "isEscalated": false,
-  "status": "New"
-}

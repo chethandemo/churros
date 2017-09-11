@@ -1,6 +1,0 @@
-{
-  "id": "<<random.uuid>>",
-  "name": "<<name.firstName>>",
-  "invoice_name": "<<random.alphaNumeric##12>>",
-  "price": "<<random.number>>"
-}

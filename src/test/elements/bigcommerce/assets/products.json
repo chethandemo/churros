@@ -1,9 +1,0 @@
-{
-  "name": "<<random.word>> <<random.word>>",
-  "type": "physical",
-  "description": "For the churros's churros",
-  "price": "9.99",
-  "categories": [1],
-  "availability": "available",
-  "weight": "2.5"
-}

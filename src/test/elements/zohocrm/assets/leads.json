@@ -1,5 +1,0 @@
-{
-  "firstName": "<<name.firstName>>",
-  "lastName": "<<name.lastName>>",
-  "email": "bob@testrobot.com"
-}

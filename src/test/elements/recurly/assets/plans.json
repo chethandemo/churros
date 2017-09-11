@@ -1,8 +1,0 @@
-{
-  "plan_code": "test50",
-  "name": "Gold plan",
-  "unit_amount_in_cents": {
-    "USD": "6000",
-    "EUR": "4500"
-  }
-}

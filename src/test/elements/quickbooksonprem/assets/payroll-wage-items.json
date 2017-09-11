@@ -1,8 +1,0 @@
-{
-  "ExpenseAccountRef": {
-    "FullName": "Payroll Expenses"
-  },
-  "IsActive": "true",
-  "Name": "test pay2",
-  "WageType": "HourlyRegular"
-}

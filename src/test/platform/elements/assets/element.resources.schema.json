@@ -1,6 +1,0 @@
-{
-  "type": "array",
-  "items": {
-    "$ref": "element.resource.schema.json"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "api": "events/box",
-  "method": "POST",
-  "body": "userId=[\"<oauthUserId>\"]&event=uploaded&itemId=<fileId>&itemType=file&newItemId=",
-  "headers": {
-    "Content-Type": "application/x-www-form-urlencoded"
-  }
-}

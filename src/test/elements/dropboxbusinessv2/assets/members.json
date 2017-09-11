@@ -1,9 +1,0 @@
-{
-  "new_members": [{
-    "member_given_name": "Do Not Delete",
-    "member_email": "devtest@cloud-elements.com",
-    "member_surname": "Do not touch",
-    "send_welcome_email": true
-  }],
-  "force_async": false
-}

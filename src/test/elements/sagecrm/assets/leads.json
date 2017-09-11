@@ -1,7 +1,0 @@
-{
-  "Lead_CompanyName": "ThisLeadCompany",
-  "Lead_PersonEmail": "contact@company.com",
-  "lead_description": "new Lead",
-  "lead_personfirstname": "<<name.firstName>>",
-  "lead_personlastname": "<<name.lastName>>"
-}

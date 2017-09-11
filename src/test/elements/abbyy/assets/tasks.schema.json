@@ -1,6 +1,0 @@
-{
-    "type": "array",
-    "item": {
-        "$ref": "task.schema.json"
-    }
-}

@@ -1,7 +1,0 @@
-{
-  "Title": "Testing List",
-  "UnsubscribePage": "https://www.example.com",
-  "UnsubscribeSetting": "AllClientLists",
-  "ConfirmedOptIn": false,
-  "ConfirmationSuccessPage": "https://www.example.com"
-}

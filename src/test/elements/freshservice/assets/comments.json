@@ -1,8 +1,0 @@
-{
-  "incoming": true,
-  "body": "body description",
-  "body_html": "body providing html version",
-  "private": true,
-  "user_id": 0,
-  "deleted": true
-}

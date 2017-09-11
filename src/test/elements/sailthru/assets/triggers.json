@@ -1,7 +1,0 @@
-{
-  "template": "myChurrosTemplate",
-  "time": "1",
-  "time_unit": "minutes",
-  "event": "send",
-  "zephyr": "{api_send(\"template_name\")}"
-}

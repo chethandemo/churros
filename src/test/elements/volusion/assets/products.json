@@ -1,4 +1,0 @@
-{
-  "ProductName": "<<random.word##2>>",
-  "ProductCode": "<<random.alphaNumeric##3>>"
-}
